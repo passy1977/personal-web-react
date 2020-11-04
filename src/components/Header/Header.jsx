@@ -7,30 +7,7 @@ export default class Header extends React.Component {
     constructor(props) {
         super(props);
         this.logo = React.createRef();
-        
     }
-
-
-    // componentWillUnmount() {
-    //     window.removeEventListener('resize', this.fixShowing);
-    // }
-    // componentDidMount() {
-    //     window.addEventListener('resize', this.fixShowing);
-    // }
-
-    // fixShowing() {
-    //     const title = document.getElementById("title");
-    //     const maxWidth = 1200;
-    //     const minWidth = 679;
-    //     console.log(""+title.offsetWidth, title.offsetWidth > minWidth,  title.offsetWidth < maxWidth);
-    //     if (title.offsetWidth > minWidth && title.offsetWidth < maxWidth) {
-    //         let value = `${ ((title.offsetWidth - maxWidth) * -1 ) / 5}px`;
-    //         console.log(value);
-    //         title.style.paddingLeft = value;
-    //     } else {
-    //         title.style.paddingLeft = "0";
-    //     }
-    // }
 
     onClick = () => {
         this.logo.current.style.background = "red";

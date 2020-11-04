@@ -38,10 +38,13 @@
     *, ::after, ::before {
         box-sizing: unset;
     }
-    #header .title, #header .logo, #header .social div[class*="row"] {
+    #header .title, #header .social div[class*="row"] {
         text-align: center!important;
         align-items: center!important;
         padding: 0;
+    }
+    #header .logo {
+        display: none;
     }
     #header .social div[class*="col"]  {    
         display: inline;

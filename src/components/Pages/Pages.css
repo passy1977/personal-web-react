@@ -1,0 +1,24 @@
+
+#pages {
+    padding: 1em;
+    background-color: white;
+}
+
+#pages .icon {
+    float:left; 
+    display:inline; 
+    width: 25px;
+    height: 25px;
+}
+
+#pages h2 {
+    float:left; 
+    display:block; 
+    clear: left;
+}
+
+#pages .descr {
+    float:left; 
+    display:block; 
+    clear: left;
+}

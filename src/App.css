@@ -13,10 +13,17 @@ body {
     color: var(--primary-text-color);
 }
 
-h1 {
+h1, h2 {
     color: black;
 }
 
 .icon-color, .icon-color a {
     color: var(--secondary-text-color)!important;
+}
+
+@media (max-width: 768px) { 
+    #content {
+        padding: 0;
+        margin: 0;
+    }
 }
