@@ -24,3 +24,15 @@
     margin-top: 0.5em;
     margin-left: 50px;
 }
+
+#pages li hr{
+    margin-top: 0.2rem;
+    margin-left: 0;
+    border-top: 1px solid var(--primary-text-color);
+}
+
+#pages li .descr {
+    margin-top: 0;
+    margin-left: 0;
+    margin-bottom: 10px;
+}

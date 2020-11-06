@@ -48,6 +48,9 @@ class PageService {
         ];
     }
 
+    idLogged = ()=> false;
 }
 
-export default PageService = new PageService();
+const pageService = new PageService();
+
+export default pageService;

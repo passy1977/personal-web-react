@@ -18,8 +18,28 @@ h1, h2 {
     color: black;
 }
 
+h4 {
+    margin-bottom: 0
+}
+
+h5 {
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    margin-bottom: 0;
+}
+
 .icon-color, .icon-color a {
     color: var(--secondary-text-color)!important;
+}
+
+.text-secondary {
+    color: var(--secondary-text-color)!important;
+}
+
+.text-bold {
+    font-weight: 600;
 }
 
 @media (max-width: 768px) { 
