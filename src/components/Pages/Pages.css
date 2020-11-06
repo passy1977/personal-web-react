@@ -1,9 +1,4 @@
 
-#pages {
-    padding: 2em;
-    background-color: white;
-}
-
 #pages .icon {
     color: white;
     background-color: var(--secondary-text-color);

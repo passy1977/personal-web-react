@@ -1,7 +1,11 @@
 import { Container as BSContainer, Col, Row } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
-import { Router, Switch, Route } from 'react-router-dom';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route
+} from "react-router-dom";
 import Footer from './components/Footer/Footer';
 import Header from './components/Header/Header';
 import Pages from './components/Pages/Pages';
@@ -25,7 +29,7 @@ function App() {
         </Row>
         <Row className="no-gutters border border-darker border-top-0 border-bottom-0">
           <Col>
-            {/* <Router>
+            <Router>
               <Switch>
                 <Route path="/" exact component={Pages} />
                 <Route path="/login" component={Login} />
@@ -35,7 +39,7 @@ function App() {
                 <Route path="/forbidden" component={Forbidden} />
                 <Route component={PPError} />
               </Switch>
-            </Router> */}
+            </Router>
           </Col>
         </Row>
         <Row className="no-gutters border border-darker border-top-0">
@@ -48,3 +52,4 @@ function App() {
 }
 
 export default App;
+  

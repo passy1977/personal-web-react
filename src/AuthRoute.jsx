@@ -9,7 +9,7 @@ export default class AuthRoute extends React.Component {
             return <Route {...this.props} ></Route>
         }
         else {
-            return <Redirect to="/login" />
+            return <Redirect to="/forbidden" />
         }
     }
 

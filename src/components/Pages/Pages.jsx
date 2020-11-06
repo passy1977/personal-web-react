@@ -26,6 +26,7 @@ export default class Pages extends React.Component {
     render = () => 
         <div 
             id="pages" 
+            className="base-container"
             // ref={this.container} 
         >
                 {
