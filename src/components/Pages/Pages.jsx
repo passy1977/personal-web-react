@@ -10,34 +10,32 @@ export default class Pages extends React.Component {
             pages: PageService.pages,
             containerWidth : 0
         };
-        this.container = React.createRef();
+        // this.container = React.createRef();
     }
 
-    componentWillUnmount() {
-        window.removeEventListener('resize', () => {});
-    }
-    componentDidMount() {
-        window.addEventListener('resize', () => 
-            this.setState({containerWidth: this.container.current.offsetWidth})
-        );
-    }
+    // componentWillUnmount() {
+    //     window.removeEventListener('resize', () => {});
+    // }
+    // componentDidMount() {
+    //     window.addEventListener('resize', () => 
+    //         this.setState({containerWidth: this.container.current.offsetWidth})
+    //     );
+    // }
 
 
     render = () => 
         <div 
             id="pages" 
-            ref={this.container} 
+            // ref={this.container} 
         >
                 {
                     this.state.pages.map (
                         (page, index) => 
                             <Page 
                                 key={page.id} 
-                                containerWidth={this.state.containerWidth} 
+                                // containerWidth={this.state.containerWidth} 
                                 index={index} 
-                                icon={page.icon} 
-                                title={page.title} 
-                                descr={page.descr} 
+                                page={page} 
                             />
                     )
                 }

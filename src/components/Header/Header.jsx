@@ -31,11 +31,14 @@ export default class Header extends React.Component {
                 <Col className="social icon-color" xs={12} sm={12} md={1}>
                     <Container fluid className="no-gutters">
                         <Row>
-                            <Col xs={5} sm={5} md={12}>
+                            <Col xs={2} sm={2} md={12}>
                                 <i onClick={this.onOpenLink.bind(this,  "https://www.linkedin.com/in/antonio-salsi-05869421") } className="fab fa-linkedin"/>
                             </Col>
                             <Col xs={5} sm={5} md={12}>
                                 <i onClick={this.onOpenLink.bind(this,  "https://www.facebook.com/mrpassy") } className="fab fa-facebook"/>
+                            </Col>
+                            <Col xs={2} sm={2} md={12}>
+                                <i onClick={this.onOpenLink.bind(this,  "https://github.com/passy1977") } className="fab fa-github"/>
                             </Col>
                         </Row>
                     </Container>

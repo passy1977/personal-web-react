@@ -2,3 +2,9 @@
 nav {
     background-color: var(--primary-bg-color);
 }
+
+
+nav button:focus {
+    outline: 1px dotted;
+    outline: 5px auto var(--primary-color);
+}

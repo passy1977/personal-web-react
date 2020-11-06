@@ -1,19 +1,32 @@
 import React from 'react';
+import PageItem from './PageItem';
 
-export default class Pages extends React.Component {
+export default class Page extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
             iconWidth : 0
         };
-        this.icon = React.createRef();
+        if (!(props instanceof Object)) {
+            throw new Error("Oggetto non valido");
+        }
     }
 
     render = () => 
-    <div>
-        <i ref={this.icon}  className={`icon rounded-circle float-left fas ${this.props.icon}`}></i>
-        <h2 className="float-left clearfix" style={{width: `${this.props.containerWidth - this.icon.current.state.width}px`}>{this.props.title}</h2>
-        <p className="clearfix w-100">{this.props.descr}</p>
-        {this.props.containerWidth}
-    </div>
+        <div>
+            <i className={`icon rounded-circle d-inline fas ${this.props.page.icon}`}></i>
+            <h2 className="d-inline">{this.props.page.title}</h2>
+            <p className="descr">{this.props.page.descr}</p>
+            {this.props.page.list && this.props.page.list.map (
+                    (item, index) => 
+                        <PageItem 
+                            key={item.id} 
+                            index={index} 
+                            pageId={this.props.page.id}
+                            item={item} 
+                        />
+                )
+            }
+        </div>;
+
 } 

@@ -5,6 +5,7 @@
     --primary-bg-color: #f0f0f0;
     --primary-text-color: #676767;
     --secondary-text-color: #007faa;
+    --primary: var(--secondary-text-color);
     --default-margin: 10px;
 }
 

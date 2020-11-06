@@ -22,7 +22,7 @@
 }
 #header .social i {
     margin: 5px;
-    font-size: 2.1em;
+    font-size: 2em;
 }
 #header .social div[class*="row"]  {
     min-height: auto;
