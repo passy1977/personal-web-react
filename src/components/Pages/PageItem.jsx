@@ -6,7 +6,7 @@ export default class PageItem extends React.Component {
     }
 
     render = () => 
-        <div>
+        <li>
             Ciaop
-        </div>;
+        </li>;
 } 

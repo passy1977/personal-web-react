@@ -15,7 +15,12 @@
     font-size: 1.6rem;
 }
 
-#pages p.descr {
+#pages .descr {
+    margin-top: 0.5em;
+    margin-left: 50px;
+}
+
+#pages ul {
     margin-top: 0.5em;
     margin-left: 50px;
 }
