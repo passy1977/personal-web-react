@@ -1,0 +1,12 @@
+#login .card {
+    width: 22rem;
+}
+
+@media (max-width: 768px) { 
+    #login .form-control {
+        padding: 0;
+        padding-left: 0.25rem;
+        padding-right: 0rem;
+    }
+
+} 
